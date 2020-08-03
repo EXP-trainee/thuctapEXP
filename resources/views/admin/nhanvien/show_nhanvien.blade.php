@@ -11,11 +11,22 @@
         table,th, td{
             border: solid 1px black;
         }
+        table{
+             margin-top: 100px;
+             margin-left: 100px;
+             line-height: 60px;
+             width: 600px;
+        }
     </style>
 </head>
 <body>
+    @if(session('thongbao'))
+        <div class="alert alert-success">
+            {{session('thongbao')}}
+        </div>
+    @endif
+<a href="{{route('createNhanVien')}}"><button class="btn btn-primary">them</button></a>
     <table >
-        <tr>
             <th>STT</th>
             <th>Họ tên</th>
             <th>email</th>
@@ -26,6 +37,7 @@
             <th>action</th>
         </tr>
         @foreach ($listNhanvien as $item)
+        <tr>
             <td>{{$item->id}}</td>
             <td>{{$item->hoten}}</td>
             <td>{{$item->email}}</td>
@@ -34,10 +46,10 @@
             <td>{{$item->gioitinh}}</td>
             <td>{{$item->diachi}}</td>
             <td>
-                <a href=""><i class="fa fa-edit " aria-hidden="true"></i></a>
-                <a href="" ><i class="fa fa-trash" aria-hidden ="true"></i> </a>
+                <a href="{{route('editNhanVien',['id' =>$item->id])}}"><i class="fa fa-edit " aria-hidden="true"></i></a>
+                <a href="{{route('deleteNhanVien',['id' =>$item->id])}}" ><i class="fa fa-trash" aria-hidden ="true"></i> </a>
             </td>
-
+        </tr>
         @endforeach
     </table>
     

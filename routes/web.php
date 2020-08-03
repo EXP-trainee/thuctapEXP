@@ -25,5 +25,8 @@ Route::get('/index', 'HomeController@admin')->name('index');
 Route::get('nhanvien', 'NhanvienController@showNhanVien')->name('showNhanVien');
 Route::get('createnhanvien','NhanvienController@createNhanVien')->name('createNhanVien');
 Route::post('createnhanvien','NhanvienController@postNhanVien')->name('postNhanVien');
+Route::get('editnhanvien/{id}','NhanvienController@editNhanVien')->name('editNhanVien');
+Route::post('updatenhanvien/{id}','NhanvienController@updateNhanVien')->name('updateNhanVien');
+Route::get('deleteNhanvien/{id}','NhanvienController@deleteNhanvien')->name('deleteNhanVien');
 
 Route::resource('users', 'UserController');
