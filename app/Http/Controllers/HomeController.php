@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function admin()
     {
         if (Gate::allows('is_admin')) {
-            return view('index');
+            return view('show_nhanvien');
         }else{
             return view('error 403');
         }  

@@ -30,25 +30,25 @@
                     <div class="form-group">
                         <label for="tensp">Số điện thoại</label>
                         <input type="text" name="sdt" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted"></small>
+                        <small id="helpId" class="text-muted">10 chữ số</small>
                     </div>
             
                     <div class="form-group">
                         <label for="tensp">Ngày sinh </label>
                         <input type="text" name="ngaysinh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted"></small>
+                        <small id="helpId" class="text-muted">yyyy/mm/dd</small>
                     </div>
             
                     <div class="form-group">
                         <label for="tensp">Gioi tính</label>
                         <input type="text" name="gioitinh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted"></small>
+                        <small id="helpId" class="text-muted">nam/nữ/giới tính khác</small>
                     </div>
             
                     <div class="form-group">
                         <label for="tensp">Địa chỉ</label>
                         <input type="text" name="diachi" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted"></small>
+                        <small id="helpId" class="text-muted">tỉnh /thành phố</small>
                     </div>
             
                     <button type="submit" class="btn btn-primary">Them</button>

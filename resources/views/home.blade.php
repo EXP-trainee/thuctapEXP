@@ -17,7 +17,7 @@
                     {{ __('You are logged in!') }}
 
                     @can('is_admin')
-                        <a href="{{route('index')}}"> Admin</a>
+                        <a href="{{route('showNhanVien')}}"> quản lý nhân viên</a>
                     @endcan
                 
                 </div>

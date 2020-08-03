@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label for="tensp">Số điện thoại</label>
                         <input value="{{$findNhanVien->sdt}}" type="text" name="sdt" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted"></small>
+                        <small id="helpId" class="text-muted">10 số</small>
                     </div>
             
                     <div class="form-group">
@@ -44,13 +44,13 @@
                     <div class="form-group">
                         <label for="tensp">Gioi tính</label>
                         <input value="{{$findNhanVien->gioitinh}}" type="text" name="gioitinh" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">nam/nu/gioi tinh khac</small>
+                        <small id="helpId" class="text-muted">nam / nữ / giới tính khác</small>
                     </div>
             
                     <div class="form-group">
                         <label for="tensp">Địa chỉ</label>
                         <input value="{{$findNhanVien->diachi}}" type="text" name="diachi" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">city</small>
+                        <small id="helpId" class="text-muted">tỉnh/thành phố</small>
                     </div>
             
                     <button type="submit" class="btn btn-primary">Update</button>

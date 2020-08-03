@@ -25,7 +25,8 @@
             {{session('thongbao')}}
         </div>
     @endif
-<a href="{{route('createNhanVien')}}"><button class="btn btn-primary">them</button></a>
+    <a href="{{route('createNhanVien')}}"><button class="btn btn-primary">thêm nhân viên</button></a>
+    <a href="{{route('home')}}"><button class="btn btn-primary">về trang chủ</button></a>
     <table >
             <th>STT</th>
             <th>Họ tên</th>
