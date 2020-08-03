@@ -22,4 +22,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@home')->name('home');
 Route::get('/index', 'HomeController@admin')->name('index');
 
+Route::get('nhanvien', 'NhanvienController@showNhanVien')->name('showNhanVien');
+Route::get('createnhanvien','NhanvienController@createNhanVien')->name('createNhanVien');
+Route::post('createnhanvien','NhanvienController@postNhanVien')->name('postNhanVien');
+
 Route::resource('users', 'UserController');
